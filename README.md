@@ -8,6 +8,34 @@
    
      ./qc-trim-qc.sh
    
+      cd ~/Desktop
+
+      mkdir GenopicsApps
+
+      cd GenomicsApps
+
+Download Fastp and Trimmomatic executables and keep inside GenomicsApps.
+        
+      get http://opengene.org/fastp/fastp
+
+      chmod a+x ./fastp
+
+or download specified version, i.e. fastp v0.23.4
+      
+      wget http://opengene.org/fastp/fastp.0.23.4
+  
+      mv fastp.0.23.4 fastp
+
+      chmod a+x ./fastp
+
+Download Trimmomatic
+       
+      wget http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip
+
+      unzip Trimmomatic-0.39.zip
+
+      rm Trimmomatic-0.39.zip
+
 Run:
 I: Input path [String]
 
